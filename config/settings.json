@@ -1,0 +1,61 @@
+{
+  "project": "YouTube China Content Pipeline",
+  "version": "1.0.0",
+  "created": "2026-05-21",
+
+  "defaults": {
+    "language": "vi",
+    "video_quality": "1080p",
+    "voice_engine": "edge-tts",
+    "voice_name": "vi-VN-HoaiMyNeural",
+    "subtitle_format": "srt",
+    "thumbnail_size": [1280, 720]
+  },
+
+  "niche": {
+    "primary": "AI Trung Quốc",
+    "secondary": "Factory/Machine",
+    "tags": ["AI", "công nghệ", "Trung Quốc", "robot", "factory"]
+  },
+
+  "schedule": {
+    "shorts_per_day": 3,
+    "longform_per_week": 2,
+    "upload_times": {
+      "shorts": ["07:00", "12:00", "19:00"],
+      "longform": ["17:00"]
+    },
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+
+  "platforms": {
+    "bilibili": {
+      "enabled": true,
+      "download_quality": "best"
+    },
+    "douyin": {
+      "enabled": true,
+      "download_quality": "best"
+    },
+    "xiaohongshu": {
+      "enabled": true,
+      "download_quality": "best"
+    },
+    "weibo": {
+      "enabled": false,
+      "download_quality": "best"
+    }
+  },
+
+  "automation": {
+    "auto_transcribe": true,
+    "auto_translate": true,
+    "whisper_model": "medium",
+    "whisper_language": "zh"
+  },
+
+  "naming": {
+    "format": "{date}_{slug}_{version}",
+    "date_format": "YYYY-MM-DD"
+  }
+}
