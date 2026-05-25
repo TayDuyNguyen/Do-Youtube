@@ -10,32 +10,16 @@ Thumbs.db
 .DS_Store
 desktop.ini
 
-# Video files (too large for git)
-01_sources/**/*.mp4
-01_sources/**/*.mkv
-01_sources/**/*.webm
-01_sources/**/*.avi
-01_sources/**/*.mov
-
-# Audio files
-03_voiceover/**/*.mp3
-03_voiceover/**/*.wav
-03_voiceover/**/*.ogg
-
-# Output videos
-07_output/**/*.mp4
-07_output/**/*.mkv
-08_published/**/*.mp4
-
-# Entire media/output/data folders that should stay local
-01_sources/
-03_voiceover/
-04_editing/
-05_subtitles/
-06_thumbnails/
-07_output/
-08_published/
-09_data/
+# Media files stay local
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mov
+*.mp3
+*.wav
+*.ogg
+*.m4a
 
 # Python
 __pycache__/
