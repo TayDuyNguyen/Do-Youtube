@@ -1,8 +1,5 @@
-# YouTube China Pipeline
-# Gitignore
-
 # Environment
-config/.env
+cau_hinh/.env
 .env
 
 # OS
@@ -20,6 +17,29 @@ desktop.ini
 *.wav
 *.ogg
 *.m4a
+*.flac
+
+# Image files stay local
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tif
+*.tiff
+
+# Subtitle and source data stay local
+*.srt
+*.vtt
+*.lrc
+*.ass
+*.ssa
+*.danmaku.xml
+*_metadata.json
+*.info.json
+noi_dung_video/transcript_goc/*.txt
+noi_dung_video/ban_dich/*.txt
 
 # Python
 __pycache__/
@@ -27,6 +47,9 @@ __pycache__/
 .venv/
 venv/
 .antigravitycli/
+
+# Local tools and ML models
+cong_cu/whisper.cpp/
 
 # Keep gitkeep files
 !**/.gitkeep
